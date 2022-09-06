@@ -1,0 +1,19 @@
+//FUNCIÓN PARA ENTREGAR VALOR A LA VENTANA PADRE con la info actual
+function aceptar(){
+};
+function cancelar(){
+	window.close();
+};
+//FIN FUNCION PARA ENTERVAR VALOR A LA VENTANA PADRE
+$(document).ready(function(){
+	$(".btnDescuento").click(function(){
+		var descuento = parseInt($(".btnDescuento").html());
+		var valorDescuento = ((valorDescontar * descuento) / 100);
+		opener.recibirDescuento(descuento, valorDescuento, indice);
+		window.close();
+	});
+	
+	$("#cancelar").click(function(){
+		cancelar();
+	});
+});

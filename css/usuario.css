@@ -1,0 +1,39 @@
+label{
+	font-size:15px;
+}
+#txtRut{
+	font-size: 15px;
+	border-radius: 3px;
+}
+#txtDireccion{
+	font-size: 15px;
+	border-radius: 3px;
+}
+#txtNombres{
+	font-size: 15px;
+	border-radius: 3px;
+}
+#txtApellidos{
+	font-size: 15px;
+	border-radius: 3px;
+}
+#txtCorreo{
+	font-size: 15px;
+	border-radius: 3px;
+}
+#txtFono{
+	font-size: 15px;
+	border-radius: 3px;
+}	
+#cmbCiudad{
+	font-size:15px;
+	border-radius: 3px;
+}
+#btnGuardarCliente{
+		margin-top:5%;
+		font-size:20px;
+}
+#btnCancelar{
+		margin-top:5%;
+		font-size:20px;
+}
