@@ -16,6 +16,8 @@
 	}
 	
 	$resultado = odbc_fetch_array($rsUsuario);
+	//echo $resultado;
+
 	if($resultado['usuario_nombre']==''){
 		echo 0;
 	}else{
@@ -26,7 +28,6 @@
 		$_SESSION["rol"] = $resultado['usuario_rol'];
 		//Consulta de datos del equipo (bodega y workstation) según su IP
 		$sqlIpBodegaWorkstation="SELECT ip, bodega, workstation FROM RP_VICENCIO.dbo.RP_IP_BODEGAS WHERE ip = '".$_SESSION["ip"]."'";
-		
 		$rsIpBodegaWorkstation = odbc_exec( $conn, $sqlIpBodegaWorkstation );
 		if ( !$rsIpBodegaWorkstation ){
 			exit( "Error en la consulta SQL IP" );
@@ -41,7 +42,8 @@
 			session_destroy();
 			echo "<script>location.href='index.php';</script>";
 		}*/
-		echo 1;
+		echo $sqlIpBodegaWorkstation;
+		// echo 1;
 	}
 	
 	
