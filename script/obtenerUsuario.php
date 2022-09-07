@@ -24,7 +24,8 @@
 		
 		$_SESSION["nombreCajero"]=utf8_encode($resultado['usuario_nombre']);
 		$_SESSION['slpCode']=$resultado['SlpCode'];
-		$_SESSION["ip"] = getHostByName(php_uname('n'));
+		// $_SESSION["ip"] = getHostByName(php_uname('n'));
+		$_SESSION["ip"] = $_SERVER['REMOTE_ADDR'];
 		$_SESSION["rol"] = $resultado['usuario_rol'];
 		//Consulta de datos del equipo (bodega y workstation) según su IP
 		$sqlIpBodegaWorkstation="SELECT ip, bodega, workstation FROM RP_VICENCIO.dbo.RP_IP_BODEGAS WHERE ip = '".$_SESSION["ip"]."'";
@@ -42,8 +43,8 @@
 			session_destroy();
 			echo "<script>location.href='index.php';</script>";
 		}*/
-		echo $sqlIpBodegaWorkstation;
-		// echo 1;
+		//echo $sqlIpBodegaWorkstation;
+		echo 1;
 	}
 	
 	
