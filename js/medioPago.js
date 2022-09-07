@@ -349,7 +349,7 @@ function imprimirBoleta(){
 					inicioComentario = inicioComentario + res + finComentario;
 				}	
 			}								
-			//condicion=false;  //Condicion Falsa fuerza a que no se imprima colilla de navidad	
+			condicion=false;  //Condicion Falsa fuerza a que no se imprima colilla de navidad	
 			if(condicion){
 				var xml  = ('<Cabecera>'+
 												'<Cliente>'+
