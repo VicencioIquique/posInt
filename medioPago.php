@@ -113,8 +113,8 @@
 						<button id="mpEfectivo" class="btn btn-default btnMedioPago"><img src="img/iconos/efectivo.png"/><br><label>Efectivo(F1)</label></button>
 						<button id="mpCredito" class="btn btn-default btnMedioPago"><img src="img/iconos/credito.png"/><br><label>Crédito(F2)</label></button>
 						<button id="mpDebito" class="btn btn-default btnMedioPago"><img src="img/iconos/redcompra.png"/><br><label>RedCompra(F3)</label></button>						
-						<button id="mpCheque" class="btn btn-default btnMedioPago"><img src="img/iconos/cheque.png"/><br><label>Cheque(F4)</label></button>
-						<button id="posIntegrado" class="btn btn-default btnMedioPago"><img src="img/iconos/credito.png"/><br><label>POS integrado(F5)</label></button>
+						<button id="mpCheque" class="btn btn-default btnMedioPago"><img src="img/iconos/cheque.png"/><br><label>Cheque</label></button>
+						<button id="posIntegrado" class="btn btn-default btnMedioPago"><img src="img/iconos/credito.png"/><br><label>POS integrado(F4)</label></button>
 						<button style="display: none;" id="posiDebito" class="btn btn-default btnMedioPago"><img src="img/iconos/redcompra.png"/><br><label>POS INT. RedCompra(F6)</label></button>
 						<button  id="mpCreditoTienda" class="btn btn-default btnMedioPago"><img src="img/iconos/creditotienda.png"/><br><label>Crédito tienda(F5)</label></button>
 						<button  id="mpListaCheques" class="btn btn-default btnMedioPago"><img src="img/iconos/cheque.png"/><br><label>Ver lista cheques(F6)</label></button>

@@ -1210,8 +1210,8 @@ $(document).ready(function(){
 			$("#mpDebito").click();
 			return false;
 		}
-		if(code == 115){ //F4 - CHEQUE
-			$("#mpCheque").click();
+		if(code == 115){ //F4 - POS INTEGRADO - ex cheque
+			$("#posIntegrado").click();
 			return false;
 		}
 		//AGREGAR F5 -- CREDITO TIENDA
