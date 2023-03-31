@@ -51,7 +51,7 @@
 		$fechaCreacion = date('Y-m-d H:i:s'); 
 		
 		//Factor temporal para el cálculo de la retenciónDL
-		$factor = 0.0041;
+		$factor = 0.0038; //update 31.03.23
 		
 		//Secuencia para inserción en tabla Detalle
 		$secuencia = 1; 

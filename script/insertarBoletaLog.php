@@ -81,7 +81,7 @@
 		$log = PHP_EOL . $fechaHoraLog . ' : Fecha de creación: ' . $fechaCreacion;
 		fwrite($handle, $log);
 		//Factor temporal para el cálculo de la retenciónDL
-		$factor = 0.0041;
+		$factor = 0.0038; //update 31.03.23
 		$log = PHP_EOL . $fechaHoraLog . ' : Factor (constante): ' . $factor;
 		fwrite($handle, $log);
 		//Secuencia para inserción en tabla Detalle
