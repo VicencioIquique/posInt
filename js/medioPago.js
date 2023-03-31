@@ -334,7 +334,7 @@ function imprimirBoleta(){
 				var folioColilla =addLeadingZeros(folioVPMedioPago,6).toString()
 				condicion=true;
 				var res ='<Texto>Participa en el sorteo del</Texto>'+ 
-						'<Texto>Día del Padre Vicencio Perfumerias!</Texto>'+
+						'<Texto>Regalo Millonario Vicencio Perfumerias!</Texto>'+
 						'<Texto>Para participar</Texto>'+
 						'<Texto>Ingresa este codigo : '+workstation+bodega+folioColilla.toString()+num1.toString()+num2.toString()+num3.toString()+num4.toString()+'</Texto>'+
 						'<Texto>Junto a tus datos en www.vicencio.cl</Texto>'+

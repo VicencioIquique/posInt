@@ -68,7 +68,7 @@ $(document).on('click', '#cargaLlaves', async function () {
 
 $(document).on('click', '#detalle', async function () {
 
-    Transbank.POS.getDetails(this.printOnPos).then((response) => {
+    Transbank.POS.getDetails(true).then((response) => {
         console.log(response);
     })
 

@@ -13,7 +13,8 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/menu.js"></script>
-		<script src="https://unpkg.com/transbank-pos-sdk-web@3/dist/pos.js"></script>
+		<!-- <script src="https://unpkg.com/transbank-pos-sdk-web@3/dist/pos.js"></script> -->
+		<script src="js/pos.js"></script>
 		<script src="js/menuIntegrado.js"></script>
 		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		
