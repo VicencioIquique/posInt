@@ -22,6 +22,9 @@ $(document).on('click', '#menuIntegrado',async  function () {
             timer: 1000
         })
         // Puedes usar Transbank.POS.getPorts() para obtener lista de puertos activos en el computador
+
+        
+
         await Transbank.POS.getPortStatus().then(async function(puertos){
             let { connected, activePort } = puertos
             console.log(connected, activePort);
