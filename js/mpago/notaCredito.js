@@ -52,6 +52,7 @@ $("#txtNcRazon").hide();
 			$("#workstation").append('<option value=""> </option>');
 			$("#workstation").append('<option value="1">1</option>');
 			$("#workstation").append('<option value="2">2</option>');
+			$("#workstation").append('<option value="3">3</option>');
 		}else if(bodega == '006'){
 			$("#workstation").empty();
 			$("#workstation").append('<option value=""> </option>');

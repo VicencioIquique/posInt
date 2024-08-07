@@ -8,8 +8,8 @@
 					  FROM [RP_VICENCIO].[dbo].[RP_ReceiptsCab_SAP] T1
 					  LEFT JOIN RP_VICENCIO.dbo.RP_PremioSorpresa T3 ON T1.bodega = T3.bodega
 					  WHERE 
-					  YEAR(T1.FechaDocto) = '2021'
-						AND MONTH(T1.FechaDocto) = '12'
+					  YEAR(T1.FechaDocto) = '2024'
+						AND MONTH(T1.FechaDocto) = '07'
 						AND	DAY(T1.FechaDocto) = '".date('d')."'
 						AND T1.bodega = '".$_SESSION["bodega"]."'
 						AND T1.tipodocto ='1'

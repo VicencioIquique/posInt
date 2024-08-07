@@ -1,0 +1,273 @@
+
+
+----------------------------------------------- INICIO TRANSACCIÓN -----------------------------------------------
+2022-12-10 21:53:36 : SELECT TOP 1 [Monto]
+			FROM [RP_VICENCIO].[dbo].[RP_MONEDA]
+			ORDER BY Fecha DESC
+2022-12-10 21:53:36 : Tipo Cambio: 0.0
+2022-12-10 21:53:36 : Fecha de creación: 2022-12-10 21:53:36
+2022-12-10 21:53:36 : Factor (constante): 0.0041
+2022-12-10 21:53:36 : SELECT Z,Cantidad,Cif,Fecha
+			FROM RP_VICENCIO.dbo.LotesDisponibles 
+			WHERE ItemCode = '3145891254303' AND 
+				bodega='002'
+			ORDER BY Fecha ASC
+2022-12-10 21:53:36 : SELECT AvgPrice
+			FROM SBO_Imp_Eximben_SAC.dbo.OITM
+			WHERE ItemCode = '3145891254303'
+2022-12-10 21:53:36 : SQL Insertar Detalle: INSERT INTO RP_VICENCIO.dbo.RP_ReceiptsDet_SAP
+						VALUES('002',
+							'1',
+							'17926',
+							'1',
+							'3145891254303',
+							'1',
+							'-14818.1',
+							'2',
+							'77990',
+							'155',
+							'51.9032',
+							'101-21-017723-004',
+							'77988',
+							'0',
+							'',
+							'10021792620221210185532',
+							'36876.500000',
+							'1',
+							'36887',
+							'3145891254303',
+							'',
+							'Taxable',
+							'0',
+							'0',
+							'',
+							'0')
+2022-12-10 21:53:36 : SELECT Z,Cantidad,Cif,Fecha
+			FROM RP_VICENCIO.dbo.LotesDisponibles 
+			WHERE ItemCode = '8426017071673' AND 
+				bodega='002'
+			ORDER BY Fecha ASC
+2022-12-10 21:53:36 : SELECT AvgPrice
+			FROM SBO_Imp_Eximben_SAC.dbo.OITM
+			WHERE ItemCode = '8426017071673'
+2022-12-10 21:53:36 : SQL Insertar Detalle: INSERT INTO RP_VICENCIO.dbo.RP_ReceiptsDet_SAP
+						VALUES('002',
+							'1',
+							'17926',
+							'2',
+							'8426017071673',
+							'2',
+							'-0.38',
+							'0',
+							'1',
+							'155',
+							'0.02',
+							'101-22-003745-032',
+							'2',
+							'0',
+							'',
+							'10021792620221210185532',
+							'1.000000',
+							'1',
+							'0',
+							'8426017071673',
+							'',
+							'Taxable',
+							'0',
+							'0',
+							'',
+							'0')
+2022-12-10 21:53:36 : Tipo de documento 1 - Fecha de creación igual a fecha de documento: 2022-12-10 21:53:36
+2022-12-10 21:53:36 : SELECT Serie 
+			FROM [RP_VICENCIO].[dbo].[Serie]
+			WHERE Bodega = 'ZFI.1132' AND 
+					Caja = '' AND 
+					Documento = '1'
+2022-12-10 21:53:36 : SQL Insertar Cabecera: INSERT INTO RP_VICENCIO.dbo.RP_ReceiptsCab_SAP
+						VALUES ('002',
+							'',
+							'1',
+							'17926',
+							'2022-12-10 21:53:36',
+							'77990',
+							'0',
+							'0',
+							'77990',
+							'',
+							'',
+							'',
+							'0',
+							0.00,
+							51.9232,
+							'77990',
+							'155',
+							'0',
+							'',
+							'',
+							'10021792620221210185532',
+							'2022-12-10 21:53:36',
+							'',
+							'0',
+							'0',
+							'0.41',
+							'',
+							'77.990',
+							'0',
+							'2',
+							'')
+2022-12-10 21:53:36 : SQL Insertar Pagos: INSERT INTO RP_VICENCIO.dbo.RP_ReceiptsPagos_SAP
+						VALUES('002',
+							'1',
+							'17926',
+							'1',
+							'DebitCard',
+							'1',
+							'2022-12-10 21:53:36',
+							'77990',
+							'redCom',
+							'2981',
+							'319723',
+							'1',
+							'RedCom',
+							'',
+							'10021792620221210185532')
+2022-12-10 21:53:36 : Actrualizando último Folio Fiscal: UPDATE RP_VICENCIO.dbo.RP_IP_BODEGAS
+										SET ultFolioFiscal = '17926'
+										WHERE ip = ''
+----------------------------------------------- FIN TRANSACCIÓN -----------------------------------------------
+
+----------------------------------------------- INICIO TRANSACCIÓN -----------------------------------------------
+2023-01-09 15:16:12 : SELECT TOP 1 [Monto]
+			FROM [RP_VICENCIO].[dbo].[RP_MONEDA]
+			ORDER BY Fecha DESC
+2023-01-09 15:16:12 : Tipo Cambio: 846.38
+2023-01-09 15:16:12 : Fecha de creación: 2023-01-09 15:16:12
+2023-01-09 15:16:12 : Factor (constante): 0.0041
+2023-01-09 15:16:12 : SELECT Z,Cantidad,Cif,Fecha
+			FROM RP_VICENCIO.dbo.LotesDisponibles 
+			WHERE ItemCode = '3605533286555' AND 
+				bodega='002'
+			ORDER BY Fecha ASC
+2023-01-09 15:16:12 : SELECT AvgPrice
+			FROM SBO_Imp_Eximben_SAC.dbo.OITM
+			WHERE ItemCode = '3605533286555'
+2023-01-09 15:16:12 : SQL Insertar Detalle: INSERT INTO RP_VICENCIO.dbo.RP_ReceiptsDet_SAP
+						VALUES('002',
+							'1',
+							'19244',
+							'1',
+							'3605533286555',
+							'1',
+							'-16718.1',
+							'1',
+							'87990',
+							'41',
+							'56.5527',
+							'101-22-047650-002',
+							'87989',
+							'0',
+							'',
+							'10021924420230109121613',
+							'52529.240000',
+							'1',
+							'27834',
+							'3605533286555',
+							'',
+							'Taxable',
+							'0',
+							'0',
+							'',
+							'0')
+2023-01-09 15:16:12 : SELECT Z,Cantidad,Cif,Fecha
+			FROM RP_VICENCIO.dbo.LotesDisponibles 
+			WHERE ItemCode = '8011607131761' AND 
+				bodega='002'
+			ORDER BY Fecha ASC
+2023-01-09 15:16:12 : SELECT AvgPrice
+			FROM SBO_Imp_Eximben_SAC.dbo.OITM
+			WHERE ItemCode = '8011607131761'
+2023-01-09 15:16:12 : SQL Insertar Detalle: INSERT INTO RP_VICENCIO.dbo.RP_ReceiptsDet_SAP
+						VALUES('002',
+							'1',
+							'19244',
+							'2',
+							'8011607131761',
+							'1',
+							'-0.19',
+							'0',
+							'1',
+							'41',
+							'0.6218',
+							'101-20-021046-666',
+							'1',
+							'0',
+							'',
+							'10021924420230109121613',
+							'417.290000',
+							'1',
+							'35630',
+							'8011607131761',
+							'',
+							'Taxable',
+							'0',
+							'0',
+							'',
+							'0')
+2023-01-09 15:16:12 : Tipo de documento 1 - Fecha de creación igual a fecha de documento: 2023-01-09 15:16:12
+2023-01-09 15:16:12 : SELECT Serie 
+			FROM [RP_VICENCIO].[dbo].[Serie]
+			WHERE Bodega = 'ZFI.1132' AND 
+					Caja = '' AND 
+					Documento = '1'
+2023-01-09 15:16:12 : SQL Insertar Cabecera: INSERT INTO RP_VICENCIO.dbo.RP_ReceiptsCab_SAP
+						VALUES ('002',
+							'',
+							'1',
+							'19244',
+							'2023-01-09 15:16:12',
+							'87990',
+							'0',
+							'0',
+							'87990',
+							'',
+							'',
+							'45',
+							'198',
+							846.38,
+							57.1745,
+							'87792',
+							'41',
+							'0',
+							'',
+							'',
+							'10021924420230109121613',
+							'2023-01-09 15:16:12',
+							'',
+							'0',
+							'0',
+							'0.41',
+							'',
+							'87.792',
+							'0',
+							'2',
+							'')
+2023-01-09 15:16:12 : SQL Insertar Pagos: INSERT INTO RP_VICENCIO.dbo.RP_ReceiptsPagos_SAP
+						VALUES('002',
+							'1',
+							'19244',
+							'1',
+							'DebitCard',
+							'1',
+							'2023-01-09 15:16:12',
+							'87990',
+							'redCom',
+							'5416',
+							'601062',
+							'1',
+							'RedCom',
+							'',
+							'10021924420230109121613')
+2023-01-09 15:16:12 : Actrualizando último Folio Fiscal: UPDATE RP_VICENCIO.dbo.RP_IP_BODEGAS
+										SET ultFolioFiscal = '19244'
+										WHERE ip = '192.168.3.84'
+----------------------------------------------- FIN TRANSACCIÓN -----------------------------------------------

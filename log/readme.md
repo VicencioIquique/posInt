@@ -1,1 +1,0 @@
-carpeta logs de ventas

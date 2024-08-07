@@ -177,7 +177,7 @@ function actualizar(valor, tipo, desc, monto){
 		$("#tablaMediosPago tr:last").after('<tr>'+
 								'<td>'+tipo+'</td>'+
 								'<td>'+desc+'</td>'+
-								'<td>'+monto+'</td>'+
+						'<td>'+monto+'</td>'+
 								'<td><input class="btn btn-danger btnEliminarMedioPago" type="button" value="X"/></td>'
 							+'</tr>');
 		itemTipo.push(tipo);
@@ -192,9 +192,9 @@ function actualizar(valor, tipo, desc, monto){
 									'<td>'+monto+'</td>'+
 									'<td><input class="btn btn-danger btnEliminarMedioPago" type="button" value="X"/></td>'
 								+'</tr>');
-				itemTipo.push(tipo);
-				itemDescripcion.push(desc);
-				itemMonto.push(parseInt(monto));	
+			itemTipo.push(tipo);
+			itemDescripcion.push(desc);
+			itemMonto.push(parseInt(monto));	
 		}else{
 			var sumaTipoPagoMonto = parseInt(itemMonto[resBuscar]) + parseInt(monto);
 			itemMonto[resBuscar] = sumaTipoPagoMonto;
@@ -326,18 +326,18 @@ function imprimirBoleta(){
 			var inicioComentario = '<Comentarios>';
 			var finComentario = '</Comentarios>';
 //--------------------------------------------------------- funcion Colillas de boleta fiscal para concursos o campañas---------------------------------------------------------
-		if (total >=20000){
+		if (total >=0){
 				var num1 =Math.floor(Math.random() * 10);
 				var num2 =Math.floor(Math.random() * 10);
 				var num3 =Math.floor(Math.random() * 10);
 				var num4 =Math.floor(Math.random() * 10);
 				var folioColilla =addLeadingZeros(folioVPMedioPago,6).toString()
-				condicion=true;
+				// condicion=true;
 				var res ='<Texto>Participa en el sorteo del</Texto>'+ 
-						'<Texto>Regalo Millonario Vicencio Perfumerias!</Texto>'+
+						'<Texto>Día del Padre Vicencio Perfumerias!</Texto>'+
 						'<Texto>Para participar</Texto>'+
 						'<Texto>Ingresa este codigo : '+workstation+bodega+folioColilla.toString()+num1.toString()+num2.toString()+num3.toString()+num4.toString()+'</Texto>'+
-						'<Texto>Junto a tus datos en www.vicencio.cl</Texto>'+
+						'<Texto>Junto a tus datos en sorteo.vicencio.cl</Texto>'+
 						'<Texto>Mucha Suerte ! y gracias por tu preferencia.</Texto>'
 		}
 //---------------------------------------------------- FIN COLILLA CONCURSOS O CAMPAÑAS -----------------------------------------------------
@@ -555,7 +555,7 @@ function imprimirBoleta(){
 							  url: "script/insertarBoleta.php",
 							  data:{jsonBoletaDetalle:jsonBoletaDetalle, jsonBoletaCabecera: jsonBoletaCabecera, jsonBoletaPagos:jsonBoletaPagos},
 							  success: function(res){
-									//randomGanador();
+								// randomGanador();
 									clearInterval(timing);
 									if(res == 0 && comprobacionInsertar == 0){
 										alert("El número de documento ya existe en este local y caja, por favor intente con otro");
